@@ -1,0 +1,53 @@
+/* reset css */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* base css */
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    height: 2000px;
+    background-color: #efefef;
+}
+
+.none_display{
+    display: none;
+}
+
+.white-text{
+    color: #fff;
+}
+
+.black-text{
+    color: #000;
+}
+
+.none_decoration{
+    text-decoration: none;
+}
+
+.bg_white{
+    background-color: #fff;
+}
+
+.grid{
+    width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.grid__full-Width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.grid__row-flex{
+    flex: 1 1 0%;
+}

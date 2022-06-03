@@ -1,0 +1,691 @@
+#header{
+    background-color: rgb(26, 148, 255);
+}
+
+#header .header__navbar{
+    padding: 16px 15px 10px 0;
+    width: 1240px;
+}
+
+#header .header__navbar-1{
+    justify-content: space-between;
+}
+
+#header .header__navbar-1 .Search{
+   flex-basis: 80%;
+   display: flex;
+}
+
+#header .header__navbar-1 input{
+    padding: 0 12px;
+    width: 100%;
+    border: none;
+}
+
+#header .header__navbar-1 button{
+    padding: 1px 6px;
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+    background: rgb(13, 92, 182);
+    border: none;
+    font-weight: 500;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#header button i{
+    margin-right: 8px;
+}
+
+#header .header__navbar-2{
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+#header .header__navbar-2 .Account{
+    margin-left: 16px;
+    font-family:"Roboto" ,Helvetica,Arial,sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+#header .Account .Account_info{
+    position: absolute;
+    min-width: 196px;
+    width: auto;
+    z-index: 1;
+    top: 45px;
+    transform: translateX(-15%);
+    padding: 10px 0;
+}
+
+#header .Account_info img{
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+}
+
+#header .Account_info > p{
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    min-width: 265px;
+    font-weight: 400;
+}
+ 
+#header .Account > img{
+    margin-right: 8px;
+}
+
+#header .Account_info::before{
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -30px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#header .Account:hover .Account_info{
+    display: block;
+}
+
+#header .Account_info > p:hover{
+    background-color: rgb(235, 234, 235);
+}
+
+#header .Account >span{
+    flex-direction: column;
+}
+
+#header .header__navbar-2 .Cart{
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+#header .Cart i{
+    position: relative;
+    font-size: 2.5rem;
+    margin-right: -10px;
+}
+
+#header .Cart .quantity{
+    position: absolute;
+    color: rgb(36, 36, 36);
+    background: rgb(253, 216, 53);
+    height: 20px;
+    right: 25px;
+    top: -10px;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 0px 7px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+#header .header__subnav{
+    justify-content: space-between;
+}
+
+#header .header__subnav .suggest__search{
+    display: flex;
+    margin-left: -218px;
+    justify-content: space-between;
+}
+
+#header .suggest__search a{
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+#header .cooperate{
+    padding: 0 8px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+#header .cooperate span{
+    line-height: 16px;
+    margin-top: 1px;
+    font-size: 1.2rem;
+}
+
+#header .cooperate i{
+    margin-right: 4px;
+}
+
+#main .main_header{
+    padding: 15px 0;
+    overflow: hidden;
+    position: relative;
+    width: 1240px;
+}
+
+#main .main_header-search span{ 
+    display: inline-block;
+    white-space: nowrap;
+    transition: all linear 0.2s;
+}
+
+#main .main_header label{
+    position: absolute;
+    line-height: 47px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#main .main_header .check_left{
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+#main .main_header .check_right{
+    right: 0;
+    top: 0;
+}
+
+#main .main_header-search a{
+    padding: 0 16px;
+    font-size: 1.4rem;
+}
+
+#check_main-header:checked ~ .main_header-search > span{
+    transform: translateX(-955px);
+}
+
+#check_main-header:checked ~ .check_left{
+    display: block;
+}
+
+#check_main-header:checked ~ .check_right{
+    display: none;
+}
+
+#main .main_ad-1{
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+#main .main_ad-1 img{
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+#main .main_ad-1 > div{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 824px;
+    height: 274px;
+    position: relative;
+}
+
+#main .main_ad-1 label{
+    position: absolute;
+    font-size: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 0;
+    opacity: 0.3;
+}
+
+#main .main_ad-1 label:hover{
+    opacity: 1;
+}
+
+#main .main_ad-1 .check_left{
+    left: 0;
+}
+
+#main .main_ad-1 .check_right{
+    right: 0;
+}
+
+#check_ad-1:checked ~ img{
+    transform: translateX(-824px);
+}
+
+#main .main_ad-2 {
+    width: 1240px;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main .main_ad-2 .ad_2-header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 8px;
+}
+
+#main .ad_2-header > div{
+    align-items: center;
+    cursor: pointer;
+}
+
+#main .ad_2-header span{
+    margin: 0 4px;
+    padding: 0 3px;
+    background-color: #ff424e;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#main .ad_2-header a{
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: rgb(11, 116, 229);
+    cursor: pointer;
+}
+
+#main .ad_2-body{
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+#main .ad_2-body label{
+    cursor: pointer;
+}
+
+#main .ad_2-body .container_product{
+    transform: translateX(0);
+    transition: all linear 1s;
+}
+
+#main .ad_2-body .product{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    width: 148px;
+    height: 212px;
+    cursor: pointer;
+}
+
+#main .ad_2-body .product:hover{
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 20px;
+}
+
+#main .product .price{
+    color: rgb(255, 66, 78);
+    font-size: 1.6rem;
+    margin: 8px 0 12px;
+}
+
+#main .price .percent-discount{
+    border: 1px solid rgb(255, 66, 78);
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: rgb(255, 240, 241);
+    padding: 0 2px;
+    line-height: 14px;
+}
+
+.status{
+    display: block;
+    background-color: rgb(255, 170, 175);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 20px;
+}
+
+#main .ad_2-body label{
+    position: absolute;
+    font-size: 1rem;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    text-align: center;
+    top: 0;
+}
+
+#main .main_ad-2 .check_left-ad-2{
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+#main .main_ad-2 .check_right-ad-2{
+    right: 0;
+}
+
+#main .main_ad-2 .check_img{
+    transform: translateY(200%);
+}
+
+#check_ad-2:checked ~ .container_product{
+    transform: translateX(-736px);
+}
+
+#check_ad-2:checked ~ .check_left-ad-2{
+    display: block;
+}
+
+#check_ad-2:checked ~ .check_right-ad-2{
+    display: none;
+}
+
+#main .main_ad-2 .wallet{
+    width: 488px;
+    height: 274px;
+    position: relative;
+}
+
+#main .wallet > div{
+    transition: all linear 0.2s;
+}
+
+#main .wallet .wallet_ad{
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+#main .wallet .wallet_info{
+    justify-content: space-between;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+
+#main .wallet_footer span{
+    width: max-content;
+    margin: auto;
+    line-height: 20px;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: -webkit-box;
+    cursor: pointer;
+}
+
+#main .wallet .wallet_body{
+    cursor: pointer;
+}
+
+#main .wallet .check_button{
+    cursor: pointer;
+}
+
+#main .wallet button{
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: rgb(64, 45, 161);
+    border: none;
+    cursor: none;
+}
+
+#check_wallet:checked ~ .wallet_quantity .quantity{
+    display: block;
+}
+
+#check_wallet:checked ~ .wallet_quantity .secu_quantity{
+    display: none;
+}
+
+#check_ad-wallet:checked ~ .wallet > div{
+    transform: translateX(-488px);
+}
+
+#check_ad-wallet:checked ~ .wallet .wallet_ad{
+    transform: translateX(-488px);
+}
+
+
+#check_ad-wallet:checked ~ .wallet .check_button{
+    transform: translateX(0);
+}
+
+#check_ad-wallet:checked ~ .wallet .check_button .check_wallet-button-1{
+    background-color: rgb(64, 45, 161) !important;
+}
+
+#check_ad-wallet:checked ~ .wallet .check_button .check_wallet-button-2{
+    background-color: rgb(171, 155, 250);
+}
+
+#main .main_ad-3 img{
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#main .main_ad-4 div{
+    justify-content: space-between;
+}
+
+#main .main_ad-4 a{
+    flex-basis: 103px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+#main .main_ad-4 span{
+    width: 81px;
+    text-align: center;
+}
+
+#main .main_ad-5 img{
+    border-radius: 4px;
+}
+
+#main .main_brand-header a{
+    line-height: 24px;
+    font-size: 15px;
+    color: rgb(11, 116, 229);
+}
+
+#main .main_brand .main_brand-ad{
+    position: relative;
+}
+
+#main .main_brand-ad img{
+    width: 598px;
+    height: 201px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all linear 0.2s;
+    transform: translateX(618px);
+}
+
+#main .main_brand-ad label{
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+    opacity: 0.3;
+    padding: 8px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#main .main_brand-ad label:hover{
+    opacity: 1;
+}
+
+#main .main_brand-ad .check_left{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main .main_brand-ad .check_right{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#check_brand-ad:checked ~ .main_brand-ad img{
+    transform: translateX(-618px);
+}
+
+#main .main_brand-suggest{
+    position: relative;
+}
+
+#main .main_brand-suggest p{
+    position: absolute;
+    bottom: 0;
+}
+
+#main .main_brand-suggest label{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.6;
+    border-radius: 50%;
+    border: 1px solid rgb(226, 226, 226);
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 4px;
+    text-align: center;
+}
+
+#main .main_brand-suggest > div{
+    margin: 0 8px;
+    transition: all linear .5s;
+}
+
+#main .main_brand-suggest label:hover{
+    opacity: 1;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#main .main_brand-suggest .check_left{
+    left: 0;
+}
+
+#main .main_brand-suggest .check_right{
+    right: 0;
+}
+
+#check_brand-suggest:checked ~ .main_brand-suggest > div{
+    transform: translateX(-1240px);
+}
+
+#main .main_ad-6 img{
+    border-radius: 8px;
+    margin-right: 14px;
+    animation: Animation linear 20s 8s infinite;
+}
+@keyframes Animation{
+    40%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-1258px);
+    }
+    90%{
+        transform: translateX(-1258px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#main .shopping_header-suggest > div{
+    height: 85px;
+    padding: 4px 8px;
+    width: 152px;
+    cursor: pointer;
+}
+
+#main .shopping_header-suggest > div:active{
+    color: #0D5C86;
+    border: 1px solid #0D5C86;
+}
+
+#main .shopping_header-suggest .text_suggest{
+    padding-top: 4px;
+    font-size: 1.3rem;
+}
+
+#main .main_shopping-body i{
+    border: 1px solid ;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    width: 240px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(13, 92, 182);
+    color: rgb(13, 92, 182);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#main .main_shopping-body i:hover{
+    color: #fff;
+    background-color: rgb(13, 92, 182);
+}
+
+#check_product:checked ~ div .shopping_product{
+    display: block;
+}
+
+#footer .footer_container{
+    justify-content: space-between;
+    width: 1240px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px 0;
+}
+
+#footer h4{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+    color: rgb(56, 56, 61);
+    margin-bottom: 12px;
+}
+
+#footer .footer_container div > a{
+    text-decoration: none;
+    color: rgb(128, 128, 137);
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+#footer p{
+    margin-bottom: 8px;
+    color: rgb(128, 128, 137);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+#footer span{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#footer .support svg{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#footer .adress{
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding: 16px 0;
+}
